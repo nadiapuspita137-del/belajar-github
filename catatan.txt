@@ -1,1 +1,2 @@
 Belajar Git dan GitHub 
+Hari ini saya belajar cara kerja commit.
