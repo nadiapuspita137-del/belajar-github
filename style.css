@@ -96,6 +96,40 @@ form button {
     color: #15803d;
 }
 
+.input-tugas {
+    display: flex;
+    gap: 10px;
+}
+
+.input-tugas input {
+    flex: 1;
+}
+
+#daftar-tugas {
+    padding: 0;
+    list-style: none;
+}
+
+#daftar-tugas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #e5e7eb;
+    border-radius: 6px;
+}
+
+#daftar-tugas button {
+    padding: 6px 10px;
+    color: white;
+    cursor: pointer;
+    background-color: #dc2626;
+    border: none;
+    border-radius: 4px;
+}
+
 footer {
     padding: 16px;
     color: white;
@@ -129,4 +163,15 @@ body.mode-gelap textarea {
 
 body.mode-gelap #status-form {
     color: #86efac;
+}
+
+body.mode-gelap #daftar-tugas li {
+    background-color: #374151;
+}
+
+@media (max-width: 500px) {
+    .input-tugas {
+        align-items: stretch;
+        flex-direction: column;
+    }
 }
