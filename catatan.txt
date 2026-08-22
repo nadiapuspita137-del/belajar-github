@@ -1,2 +1,3 @@
-Belajar Git dan GitHub 
+Belajar Git dan GitHub
 Hari ini saya belajar cara kerja commit.
+Sekarang saya sedang belajar branch.
