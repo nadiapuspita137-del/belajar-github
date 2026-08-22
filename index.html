@@ -36,7 +36,22 @@
 
         <section id="kontak">
             <h2>Kontak</h2>
-            <p>Kirim pesan melalui <a href="mailto:latihan@example.com">email</a>.</p>
+            <p>Isi formulir berikut untuk mengirim pesan latihan.</p>
+
+            <form id="form-kontak">
+                <label for="nama">Nama</label>
+                <input id="nama" name="nama" type="text" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+
+            <p id="status-form" aria-live="polite"></p>
         </section>
     </main>
 
