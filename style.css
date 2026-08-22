@@ -31,6 +31,17 @@ nav a:hover {
     text-decoration: underline;
 }
 
+#tombol-tema {
+    margin-top: 20px;
+    padding: 10px 16px;
+    color: #2563eb;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+}
+
 main {
     width: min(900px, 90%);
     margin: 32px auto;
@@ -56,4 +67,17 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+body.mode-gelap {
+    color: #e5e7eb;
+    background-color: #111827;
+}
+
+body.mode-gelap section {
+    background-color: #1f2937;
+}
+
+body.mode-gelap h2 {
+    color: #93c5fd;
 }
