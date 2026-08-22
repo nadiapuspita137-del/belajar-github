@@ -11,3 +11,16 @@ tombolTema.addEventListener("click", function () {
         tombolTema.textContent = "Aktifkan Mode Gelap";
     }
 });
+
+const formKontak = document.querySelector("#form-kontak");
+const inputNama = document.querySelector("#nama");
+const statusForm = document.querySelector("#status-form");
+
+formKontak.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const nama = inputNama.value.trim();
+
+    statusForm.textContent = `Terima kasih, ${nama}! Pesan latihan berhasil diproses.`;
+    formKontak.reset();
+});
