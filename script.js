@@ -24,3 +24,35 @@ formKontak.addEventListener("submit", function (event) {
     statusForm.textContent = `Terima kasih, ${nama}! Pesan latihan berhasil diproses.`;
     formKontak.reset();
 });
+
+const formTugas = document.querySelector("#form-tugas");
+const inputTugas = document.querySelector("#input-tugas");
+const daftarTugas = document.querySelector("#daftar-tugas");
+
+formTugas.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const teksTugas = inputTugas.value.trim();
+
+    if (teksTugas === "") {
+        return;
+    }
+
+    const itemTugas = document.createElement("li");
+    const namaTugas = document.createElement("span");
+    const tombolHapus = document.createElement("button");
+
+    namaTugas.textContent = teksTugas;
+    tombolHapus.textContent = "Hapus";
+    tombolHapus.type = "button";
+
+    tombolHapus.addEventListener("click", function () {
+        itemTugas.remove();
+    });
+
+    itemTugas.append(namaTugas, tombolHapus);
+    daftarTugas.append(itemTugas);
+
+    formTugas.reset();
+    inputTugas.focus();
+});
